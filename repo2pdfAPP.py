@@ -7,7 +7,7 @@ from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtCore import Qt
 import json
 
-# Import the classes and functions from Repositary2Pdf.py
+# Import the classes and functions from Repository2Pdf.py
 from Repositary2Pdf import RepoToPDF, parallel_process
 from repo2pdf_visualization_app import TreeView
 import os
