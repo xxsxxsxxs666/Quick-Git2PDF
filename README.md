@@ -2,7 +2,7 @@
 ![image](logo.png)
 
 <h2>⚈ About This</h2>
-You can directly run /dist/repo2pdfAPP/repo2pdfAPP.exe to convert repository into PDF. You can use teh repository url or downloaded repository path to convert it into PDF. The GUI is as follows:
+You can directly run `/dist/repo2pdfAPP/repo2pdfAPP.exe` to convert repository into PDF. You can use teh repository url or downloaded repository path to convert it into PDF. The GUI is as follows:
 
 # user interface
 ![image](GUI.png)
