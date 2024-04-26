@@ -39,4 +39,6 @@ Here is default configuration options, youcan modify the config.json file to cha
 }
 ```
 
+<h2>⚈ Thanks </h2>
+https://img.shields.io/github/stars/Alfareiza/repository-to-pdf
 
