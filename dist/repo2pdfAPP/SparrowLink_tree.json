@@ -1,0 +1,158 @@
+{
+    "SparrowLink": {
+        "size": 329075,
+        "sub": {
+            "caculate_metric.py": {
+                "size": 5194,
+                "sub": null
+            },
+            "data": {
+                "size": 16810,
+                "sub": {
+                    "loader.py": {
+                        "size": 16810,
+                        "sub": null
+                    }
+                }
+            },
+            "loss_zoo": {
+                "size": 4731,
+                "sub": {
+                    "cldice.py": {
+                        "size": 3709,
+                        "sub": null
+                    },
+                    "soft_skeleton.py": {
+                        "size": 1022,
+                        "sub": null
+                    }
+                }
+            },
+            "main.py": {
+                "size": 12926,
+                "sub": null
+            },
+            "model": {
+                "size": 70251,
+                "sub": {
+                    "CS2net.py": {
+                        "size": 9640,
+                        "sub": null
+                    },
+                    "denseunet_skip.py": {
+                        "size": 14247,
+                        "sub": null
+                    },
+                    "swin_unet.py": {
+                        "size": 46364,
+                        "sub": null
+                    }
+                }
+            },
+            "modify_key_in_config.py": {
+                "size": 3929,
+                "sub": null
+            },
+            "post_processing": {
+                "size": 3023,
+                "sub": {
+                    "fracture_detection.py": {
+                        "size": -1,
+                        "sub": null
+                    },
+                    "move_file.py": {
+                        "size": 2283,
+                        "sub": null
+                    },
+                    "select_two_region.py": {
+                        "size": 741,
+                        "sub": null
+                    }
+                }
+            },
+            "README.md": {
+                "size": 273,
+                "sub": null
+            },
+            "registration": {
+                "size": 8376,
+                "sub": {
+                    "basic_registration.py": {
+                        "size": 3130,
+                        "sub": null
+                    },
+                    "label_registration.py": {
+                        "size": 5246,
+                        "sub": null
+                    }
+                }
+            },
+            "second_stage_main.py": {
+                "size": 23727,
+                "sub": null
+            },
+            "second_stage_only_one_phase_main.py": {
+                "size": 21225,
+                "sub": null
+            },
+            "slicer_visulization": {
+                "size": 5979,
+                "sub": {
+                    "slicer_mark_up.py": {
+                        "size": 3760,
+                        "sub": null
+                    },
+                    "slicer_mvf.py": {
+                        "size": 2219,
+                        "sub": null
+                    }
+                }
+            },
+            "SparrowLink_metric.py": {
+                "size": 8010,
+                "sub": null
+            },
+            "SparrowLink_Post_Process.py": {
+                "size": 25552,
+                "sub": null
+            },
+            "transform": {
+                "size": 119069,
+                "sub": {
+                    "Anatomical_augumentation_for_CCTA_images.md": {
+                        "size": 3628,
+                        "sub": null
+                    },
+                    "AnatomyTransformD.py": {
+                        "size": 50646,
+                        "sub": null
+                    },
+                    "cardiac_transformation.py": {
+                        "size": 2871,
+                        "sub": null
+                    },
+                    "fast_crop.py": {
+                        "size": 1782,
+                        "sub": null
+                    },
+                    "IntensityTransformD.py": {
+                        "size": 12829,
+                        "sub": null
+                    },
+                    "NoiseTransformD.py": {
+                        "size": 5388,
+                        "sub": null
+                    },
+                    "SpatialTransformationD.py": {
+                        "size": 3574,
+                        "sub": null
+                    },
+                    "utils.py": {
+                        "size": 38351,
+                        "sub": null
+                    }
+                }
+            }
+        }
+    }
+}

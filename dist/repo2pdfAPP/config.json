@@ -1,0 +1,19 @@
+{
+  "wkhtmltopdf": "C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe",
+  "overwrite": true,
+  "num_multiprocess": -1,
+  "git_download_path": null,
+  "output_name": null,
+  "output_dir": null,
+  "style": "colorful",
+  "icon_path": "logo_4.png",
+  "only_read": [],
+  "gitignore_flexible_config":
+  [
+    "index.html",
+    "tools",
+    "utils",
+    "tests",
+    "test"
+  ]
+}
