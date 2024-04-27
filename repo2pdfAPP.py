@@ -8,7 +8,7 @@ from PyQt5.QtCore import Qt
 import json
 
 # Import the classes and functions from Repository2Pdf.py
-from Repositary2Pdf import RepoToPDF, parallel_process
+from Repository2Pdf import RepoToPDF, parallel_process
 from repo2pdf_visualization_app import TreeView
 import os
 from git import Repo
