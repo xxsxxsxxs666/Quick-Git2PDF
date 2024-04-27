@@ -2,7 +2,7 @@
 ![image](logo.png)
 
 <h2>⚈ About This</h2>
-You can easily convert a repository into a PDF by running the `/dist/repo2pdfAPP/repo2pdfAPP.exe` executable. 
+You can easily convert a repository into a PDF by running the `<code>/dist/repo2pdfAPP/repo2pdfAPP.exe</code>` executable. 
 To do this, you can either provide the URL of the repository or the path to the downloaded repository. 
 The graphical user interface (GUI) for the application is as follows:
 # user interface
