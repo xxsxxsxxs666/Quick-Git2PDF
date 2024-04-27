@@ -2,7 +2,7 @@
 ![image](logo.png)
 
 <h2>⚈ About This</h2>
-You can easily convert a repository into a PDF by running the **/dist/repo2pdfAPP/repo2pdfAPP.exe** executable. 
+You can easily convert a repository into a PDF by running the `/dist/repo2pdfAPP/repo2pdfAPP.exe` executable. 
 To do this, you can either provide the URL of the repository or the path to the downloaded repository. 
 The graphical user interface (GUI) for the application is as follows:
 # user interface
@@ -19,7 +19,7 @@ python Repository2PDF.py \
 ```
 
 Here are the default configuration options for the application. If you wish to customize the settings, 
-you can edit the config.json file located in the *dist/repo2pdfAPP* directory.
+you can edit the config.json file located in the `dist/repo2pdfAP` directory.
 
 ```json
 {
