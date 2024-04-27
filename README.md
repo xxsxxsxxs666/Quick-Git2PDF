@@ -19,7 +19,7 @@ python Repository2PDF.py \
 ```
 
 Here are the default configuration options for the application. If you wish to customize the settings, 
-you can edit the config.json file located in the `dist/repo2pdfAP` directory.
+you can edit the `config.json` file located in the `dist/repo2pdfAP` directory.
 
 ```json
 {
@@ -43,7 +43,7 @@ you can edit the config.json file located in the `dist/repo2pdfAP` directory.
 }
 ```
 
-This project employs **wkhtmltopdf** for converting HTML to PDF, with the application housed in the **dist** directory. 
+This project employs **wkhtmltopdf** for converting HTML to PDF, with the application housed in the `dist` directory. 
 To operate the application, ensure **wkhtmltopdf** is work on your system. 
 If it's missing, download it from https://wkhtmltopdf.org/downloads.html. Post-installation, 
 edit the **config.json** file to reflect the path to the wkhtmltopdf executable, enabling the app to locate and use it correctly.
