@@ -49,11 +49,12 @@ class RepoToPDF:
     ]
 
     def __init__(self, directory, wkhtmltopdf_path, style="colorful", output_dir=None,
-                 output_name=None, rewrite=True, flexible_ignore_config=None, only_read_config=None):
-
+                 output_name=None, rewrite=True, flexible_ignore_config=None, only_read_config=None,
+                 only_current_level=False):
         self.directory = Path(str(directory))
         self.style = style
         self.name_repository = str(directory).strip(os.sep).split(os.sep)[-1]
+        self.only_current_level = only_current_level
         self.ignored_files = \
             RepoToPDF.gitignore_stuff + self.ignore_files() + RepoToPDF.gitignore_flexible + flexible_ignore_config
         self.only_read = RepoToPDF.only_read + only_read_config
@@ -104,8 +105,9 @@ class RepoToPDF:
 
         mimetypes.add_type('text/typescript', '.ts', True)
         mimetypes.add_type('text/readme', '.md', True)
+        mimetypes.add_type('text/json', '.json', True)
         for i in sorted(directory.iterdir()):
-            if not self.must_ignore(i) and i.is_dir():
+            if not self.must_ignore(i) and i.is_dir() and not self.only_current_level:
                 self.select_files(i, files_selected)  # 传递新的空列表
             elif self.is_text_files(i):
                 if not self.must_ignore(i) and i.is_file() and self.only_read_files(i):

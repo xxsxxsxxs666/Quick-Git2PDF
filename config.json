@@ -1,5 +1,5 @@
 {
-  "wkhtmltopdf": "../wkhtmltopdf/bin/wkhtmltopdf.exe",
+  "wkhtmltopdf": "H:/git/Repo2PDF/Quick-Git2PDF/dist/wkhtmltopdf/bin/wkhtmltopdf.exe",
   "overwrite": true,
   "num_multiprocess": -1,
   "git_download_path": null,

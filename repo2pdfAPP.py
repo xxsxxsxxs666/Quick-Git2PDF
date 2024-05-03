@@ -29,6 +29,7 @@ class RepositoryToPDFApp(QWidget):
         self.style = config["style"]
         self.icon_path = config["icon_path"]
         self.git_download_path = config.get("git_download_path")
+        self.only_current_level = False
         if not self.git_download_path or self.git_download_path == "":
             self.git_download_path = os.getcwd()
 
@@ -89,6 +90,9 @@ class RepositoryToPDFApp(QWidget):
         self.overwrite_checkbox = QCheckBox("Overwrite Existing PDF")
         self.overwrite_checkbox.setChecked(self.overwrite)
 
+        self.level_control_checkbox = QCheckBox("Only Current Level")
+        self.level_control_checkbox.setChecked(self.only_current_level)
+
         self.browse_button_repo.clicked.connect(self.browse_repository)
         self.output_dir_browse_button.clicked.connect(self.browse_output)
         self.convert_button.clicked.connect(self.convert_to_pdf)
@@ -101,6 +105,10 @@ class RepositoryToPDFApp(QWidget):
         output_dir_layout = QHBoxLayout()
         output_dir_layout.addWidget(self.output_dir_edit)
         output_dir_layout.addWidget(self.output_dir_browse_button)
+
+        check_box_layout = QHBoxLayout()
+        check_box_layout.addWidget(self.overwrite_checkbox)
+        check_box_layout.addWidget(self.level_control_checkbox)
 
         layout = QVBoxLayout()
         # 将 Logo 添加到布局顶部
@@ -128,7 +136,7 @@ class RepositoryToPDFApp(QWidget):
         layout.addWidget(self.output_name_edit)
 
         # 添加覆盖选项复选框到布局
-        layout.addWidget(self.overwrite_checkbox)
+        layout.addLayout(check_box_layout)
 
         layout.addWidget(self.convert_button)
         layout.addWidget(self.information_label)
@@ -165,7 +173,8 @@ class RepositoryToPDFApp(QWidget):
                                  output_name=self.output_name_edit.text(),
                                  rewrite=self.overwrite_checkbox.isChecked(),
                                  only_read_config=only_read_config,
-                                 flexible_ignore_config=flexible_ignore_config)
+                                 flexible_ignore_config=flexible_ignore_config,
+                                 only_current_level=self.level_control_checkbox.isChecked())
                 if len(repo.files_to_convert) == 0:
                     QMessageBox.information(self, "Warning!", "No file to convert!")
                 else:
