@@ -6,6 +6,7 @@ You can easily convert a repository into a PDF by running the `<code>/dist/repo2
 To do this, you can either provide the URL of the repository or the path to the downloaded repository. 
 The graphical user interface (GUI) for the application is as follows:
 # user interface
+
 ![image](GUI.png)
 
 Alternatively, you can run the Repository2PDF.py script using the command-line interface (CLI). 
